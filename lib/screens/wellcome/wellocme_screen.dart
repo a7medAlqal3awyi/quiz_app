@@ -23,70 +23,68 @@ class WelcomeScreen extends StatelessWidget {
           ),
           SafeArea(
               child: Padding(
-                padding: EdgeInsets.all(12.w),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Spacer(
-                      flex: 3,
-                    ),
-                    Text(
-                      "Let's Start Quiz",
-                      style: TextStyle(
-                          fontSize: 30.sp,
-                          color: Colors.cyanAccent,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 10.h,
-                    ),
-                    Text(
-                      "Enter your info below",
-                      style: TextStyle(
-                          fontSize: 15.sp,
-                          color: Colors.white,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 20.h,
-                    ),
-                    const TextField(
-                      style: TextStyle(color: Colors.white),
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: Color(0xFF1C2341),
-                        hintText: "Full Name",
-                        hintStyle: TextStyle(color: Colors.white),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(12)),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 40.h,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        context.pushNamed(Routes.quizScreen);
-                      },
-                      child: Container(
-                        height: 40.h,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadiusDirectional.circular(
-                                10.w),
-                            gradient: kPrimaryGradient),
-                        child: const Center(
-                          child: Text('Lets Start Quiz'),
-                        ),
-                      ),
-                    ),
-                    const Spacer(
-                      flex: 2,
-                    ),
-                  ],
+            padding: EdgeInsets.all(12.w),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Spacer(
+                  flex: 3,
                 ),
-              )),
-
+                Text(
+                  "Let's Start Quiz",
+                  style: TextStyle(
+                      fontSize: 30.sp,
+                      color: Colors.cyanAccent,
+                      fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 10.h,
+                ),
+                Text(
+                  "Enter your info below",
+                  style: TextStyle(
+                      fontSize: 15.sp,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
+                SizedBox(
+                  height: 20.h,
+                ),
+                const TextField(
+                  style: TextStyle(color: Colors.white),
+                  decoration: InputDecoration(
+                    filled: true,
+                    fillColor: Color(0xFF1C2341),
+                    hintText: "Full Name",
+                    hintStyle: TextStyle(color: Colors.white),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(12)),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 40.h,
+                ),
+                InkWell(
+                  onTap: () {
+                    context.pushNamed(Routes.quizScreen);
+                  },
+                  child: Container(
+                    height: 40.h,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadiusDirectional.circular(10.w),
+                        gradient: kPrimaryGradient),
+                    child: const Center(
+                      child: Text('Lets Start Quiz'),
+                    ),
+                  ),
+                ),
+                const Spacer(
+                  flex: 2,
+                ),
+              ],
+            ),
+          )),
         ],
       ),
     );
