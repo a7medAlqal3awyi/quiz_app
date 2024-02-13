@@ -15,7 +15,6 @@ class QuizBody extends StatelessWidget {
   Widget build(BuildContext context) {
     QuestionController _questionController = Get.put(QuestionController());
     return Stack(
-
       children: [
         SvgPicture.asset(
           "assets/images/bg3.svg",
